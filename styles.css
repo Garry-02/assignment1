@@ -97,8 +97,35 @@ footer {
 }
 
 .newnote {
+    display : flex;
+    flex-direction: row;
     align-self: center;
-    background-color: #f2e9de;
-    padding: 1rem;
+    padding: 5rem;
     margin: 2rem;
+}
+
+.button {
+    padding-right : 1rem;
+    color: #286983;
+}
+.enternote {
+    background-color: #f2e9de;
+    padding-bottom: 10rem;
+    padding-right: 10rem;
+}
+
+.options {
+    display: flex;
+    list-style: none;
+    padding-left: 50rem;
+}
+
+.save {
+    padding-right: 1rem;
+    color: #286983;
+}
+
+.delete {
+    padding-right: 1rem;
+    color: #b4637a;
 }
