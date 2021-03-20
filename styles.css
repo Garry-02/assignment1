@@ -7,7 +7,6 @@ header {
     height: 3rem;
     background-color: #f2e9de;
     top: 0;
-    border: 1px #907aa9 solid;
     position: sticky;
 }
 
@@ -25,4 +24,27 @@ nav {
 .hlitem {
     padding-right: 1rem;
     color: #334259;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffaf3;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 920px;
+}
+
+.slideout {
+    padding : 1rem;
+    margin: 2rem;
+    background-color: #f2e9de;
+    width: 1rem;
+}
+
+.newbutton {
+    align-self: center;
+    background-color: #f2e9de;
+    padding: 1rem;
+    margin: 2rem;
 }
