@@ -92,7 +92,7 @@ footer {
 .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 3rem 10rem 2rem;
-    gap: 5px;
+    gap: 3px;
     width: 1700px;
 }
 
@@ -128,4 +128,28 @@ footer {
 .delete {
     padding-right: 1rem;
     color: #b4637a;
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .sidebar {
+        height : 730px;
+        width : 100px;
+        padding : 0rem;
+    }
+
+    .notelist {
+        padding : 0rem;
+    }
+    
+    .grid {
+        width : 250px;
+    }
+
+    .box {
+        height: 650px;
+    }
+    
+    .options {
+        padding-left: 5rem;
+    }
 }
