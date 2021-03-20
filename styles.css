@@ -56,3 +56,35 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+.rowbox {
+    display: flex;
+    flex-direction: row;
+    background-color: #fffaf3;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 900px;
+}
+
+.sidebar {
+    height: 900px;
+    background-color: #faf3ed;
+    padding-left: 5rem;
+    padding-right: 1rem;
+}
+
+.slidein {
+    padding : 1rem;
+    margin: 2rem;
+    background-color: #f2e9de;
+    width: 1rem;
+}
+
+.notelist {
+    list-style: none;
+    padding : 1rem;
+}
+
+.listitem {
+    padding : 1rem;
+}
