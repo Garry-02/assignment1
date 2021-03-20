@@ -67,7 +67,7 @@ footer {
 }
 
 .sidebar {
-    height: 900px;
+    height: 980px;
     background-color: #faf3ed;
     padding-left: 5rem;
     padding-right: 1rem;
@@ -87,4 +87,18 @@ footer {
 
 .listitem {
     padding : 1rem;
+}
+
+.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 10rem 2rem;
+    gap: 5px;
+    width: 1700px;
+}
+
+.newnote {
+    align-self: center;
+    background-color: #f2e9de;
+    padding: 1rem;
+    margin: 2rem;
 }
