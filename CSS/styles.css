@@ -99,34 +99,35 @@ footer {
 .newnote {
     display : flex;
     flex-direction: row;
-    align-self: center;
-    padding: 5rem;
+    align-self: flex-start;
     margin: 2rem;
 }
 
 .button {
-    padding-right : 1rem;
-    color: #286983;
+    background-color: #286983;
+    color: #575279;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 .enternote {
     background-color: #f2e9de;
-    padding-bottom: 10rem;
-    padding-right: 10rem;
+    height: 250px;
+    width: 250px;
 }
 
-.options {
-    display: flex;
-    list-style: none;
-    padding-left: 50rem;
+.notebuttons {
+    padding-left: 6rem;
+    display : flex;
+    justify-content: flex-end;
 }
 
 .save {
-    padding-right: 1rem;
-    color: #286983;
+    color: #575279;
 }
 
 .delete {
-    padding-right: 1rem;
     color: #b4637a;
 }
 
@@ -149,7 +150,12 @@ footer {
         height: 650px;
     }
     
-    .options {
-        padding-left: 5rem;
+    .enternote {
+        height: 150px;
+        width: 150px;
+    }
+
+    .notebuttons {
+        padding-left: 3rem;
     }
 }
