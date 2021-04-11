@@ -120,10 +120,8 @@ footer {
     margin-top: 5px;
     margin-left: 10px;
 }
-.enternote {
+textarea {
     background-color: #f2e9de;
-    height: 250px;
-    width: 250px;
 }
 
 .notebuttons {
