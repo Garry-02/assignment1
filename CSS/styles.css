@@ -3,10 +3,20 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: minmax(0px, auto) 1fr;
+    grid-template-rows: 3rem 1fr 5rem;
+    grid-template-areas: 
+        's h'
+        's m'
+        's f';
+    width: 100vw;
+    height: 100vh;
+}
 header {
-    height: 3rem;
+    grid-area: h;
     background-color: #f2e9de;
-    top: 0;
     position: sticky;
 }
 
@@ -22,14 +32,13 @@ nav {
 }
 
 .hlitem {
-    padding-right: 1rem;
+    padding-right: 3rem;
     color: #334259;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    background-color: #fffaf3;
     align-items: flex-start;
     justify-content: flex-start;
     height: 900px;
@@ -50,6 +59,7 @@ nav {
 }
 
 footer {
+    grid-area: f;
     height: 2rem;
     background-color: #f2e9de;
     display: flex;
@@ -67,9 +77,10 @@ footer {
 }
 
 .sidebar {
+    grid-area: s;
     height: 980px;
     background-color: #faf3ed;
-    padding-left: 5rem;
+    padding-left: 3rem;
     padding-right: 1rem;
 }
 
@@ -89,11 +100,9 @@ footer {
     padding : 1rem;
 }
 
-.grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 10rem 2rem;
-    gap: 3px;
-    width: 1700px;
+.middle {
+    grid-area: m;
+    background-color: #fffaf3;
 }
 
 .newnote {
@@ -128,7 +137,7 @@ footer {
 }
 
 .delete {
-    color: #b4637a;
+    color: #575279;
 }
 
 @media screen and (min-width: 300px) and (max-width: 499px) {
