@@ -35,14 +35,16 @@
                 </nav>
         </header>
         <div class = "middle mlight">
-
+            <button class = "newbutton" onclick="newnote()"> 
+                + create a new note
+            </button>
             <article class = "box">
                 <div class = "newnote"> 
                     <textarea id="Note" rows='8' cols="25" contenteditable="True" class = "tlight"> add your note here </textarea>
                 </div>
                 <div class = "notebuttons">
-                    <button class = "save"> save </button>
-                    <button class = "delete"> delete </button>
+                    <button class = "save" onclick="save()"> save </button>
+                    <button class = "delete" onclick="del()"> delete </button>
                 </div>
             </article>
             <footer class = "light">

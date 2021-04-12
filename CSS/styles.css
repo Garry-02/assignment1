@@ -69,6 +69,18 @@ nav {
     padding-right: 3rem;
 }
 
+textarea {
+    visibility: hidden;
+}
+
+.save {
+    visibility: hidden;
+}
+
+.delete {
+    visibility: hidden;
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -87,6 +99,7 @@ nav {
     align-self: center;
     padding: 1rem;
     margin: 2rem;
+    display: block;
 }
 
 footer {
