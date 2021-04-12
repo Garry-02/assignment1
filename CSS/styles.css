@@ -67,15 +67,6 @@ footer {
     justify-content: center;
 }
 
-.rowbox {
-    display: flex;
-    flex-direction: row;
-    background-color: #fffaf3;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 900px;
-}
-
 .sidebar {
     grid-area: s;
     height: 980px;
@@ -138,31 +129,29 @@ textarea {
     color: #575279;
 }
 
-@media screen and (min-width: 300px) and (max-width: 499px) {
-    .sidebar {
-        height : 730px;
-        width : 100px;
-        padding : 0rem;
+@media screen  and (max-width: 499px) {
+
+    .container{
+        display: grid;
+        width: 500px;
+        grid-template-rows: 4rem auto 1fr 4rem;
+        grid-template-areas:
+        'h'
+        's'
+        'm'
+        'f';
     }
 
-    .notelist {
-        padding : 0rem;
-    }
-    
-    .grid {
-        width : 250px;
+    .sidebar{
+        height: 7rem;
+        display: flex;
+        flex-direction: row;
     }
 
+    .listitem{
+        padding: 0rem;
+    }
     .box {
-        height: 650px;
-    }
-    
-    .enternote {
-        height: 150px;
-        width: 150px;
-    }
-
-    .notebuttons {
-        padding-left: 3rem;
+        height: 400px;
     }
 }
