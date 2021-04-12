@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="JS/app.js"></script>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
@@ -11,16 +12,17 @@
 </head>
 <body>
     <div class = "container">
-        <header>
+        <header class = "light">
             <nav>
-                <ul class = "headerlist">
+                <button class = "themebutton" onclick="themechange()"> Theme </button>
+                <ul class = "headerlist light">
                     <li class = "hlitem"> About </li>
                     <li class = "hlitem">  Docs </li>
                 </ul>
             </nav>
         </header>
 
-        <div class = "middle">
+        <div class = "middle mlight">
             <button class = "slideout">
                 >>
             </button>
@@ -28,7 +30,7 @@
                 + create a new note
             </button>
         </div>
-        <footer>
+        <footer class = "light">
             Created by Garry | @Grry02
         </footer>
     </div>

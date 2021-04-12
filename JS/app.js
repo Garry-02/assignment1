@@ -1,15 +1,30 @@
-/* Button to switch to dark theme 
-    light theme : light background with dark text
-    dark theme : dark background with light text 
+const themebtn = document.querySelector(".themebutton")
+const head = document.querySelector("header")
+const sidebar = document.querySelector(".sidebar")
+const middle = document.querySelector(".middle")
+const footer = document.querySelector("footer")
+const ul = document.querySelector(".headerlist")
+const textarea = document.querySelector("textarea")
 
-    - when in light theme, button is "off" or boolean value False
-    - when in dark theme, button is "on" or boolean value True
-    - when clicked,
-    - checks if button = on or off
-    - if off, changes theme to dark
-    - if on, changes theme to light 
 
-*/
+function themechange() {
+
+    head.classList.toggle("light")
+    head.classList.toggle("dark")
+    sidebar.classList.toggle("sdark")
+    sidebar.classList.toggle("slight")
+    middle.classList.toggle("mdark")
+    middle.classList.toggle("mlight")
+    footer.classList.toggle("dark")
+    footer.classList.toggle("light")
+    ul.classList.toggle("light")
+    ul.classList.toggle("dark")
+    textarea.classList.toggle("tlight")
+    textarea.classList.toggle("tdark")
+
+}
+
+
 
 /* new note button 
     when clicked, 

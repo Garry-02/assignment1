@@ -1,5 +1,4 @@
 *{
-    color: #575279;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -20,6 +19,41 @@ header {
     position: sticky;
 }
 
+
+.light {
+    background-color: #f2e9de;
+    color: #575279;
+}
+.dark {
+    background-color: #6e6a86;
+    color: #f2e9de;
+}
+.slight {
+    background-color: #faf3ed;
+    color: #575279;
+}
+.sdark {
+    background-color: #817c9c;
+    color: #f2e9de;
+}
+.mlight {
+    background-color: #fffaf3;
+    color: #575279;
+}
+.mdark {
+    background-color: #907aa9;
+    color: #f2e9de;
+}
+.tlight {
+    background-color: #f2e9de;
+    color: #575279;
+}
+.tdark {
+    background-color: #6e6a86;
+    color: #f2e9de;
+}
+
+
 nav {
     display : flex;
     justify-content: flex-end;
@@ -33,7 +67,6 @@ nav {
 
 .hlitem {
     padding-right: 3rem;
-    color: #334259;
 }
 
 .box {
@@ -47,13 +80,11 @@ nav {
 .slideout {
     padding : 1rem;
     margin: 2rem;
-    background-color: #f2e9de;
     width: 1rem;
 }
 
 .newbutton {
     align-self: center;
-    background-color: #f2e9de;
     padding: 1rem;
     margin: 2rem;
 }
@@ -61,7 +92,6 @@ nav {
 footer {
     grid-area: f;
     height: 2rem;
-    background-color: #f2e9de;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +100,6 @@ footer {
 .sidebar {
     grid-area: s;
     height: 980px;
-    background-color: #faf3ed;
     padding-left: 3rem;
     padding-right: 1rem;
 }
@@ -78,7 +107,6 @@ footer {
 .slidein {
     padding : 1rem;
     margin: 2rem;
-    background-color: #f2e9de;
     width: 1rem;
 }
 
@@ -93,7 +121,6 @@ footer {
 
 .middle {
     grid-area: m;
-    background-color: #fffaf3;
 }
 
 .newnote {
@@ -103,16 +130,10 @@ footer {
     margin: 2rem;
 }
 
-.button {
-    background-color: #286983;
-    color: #575279;
+button {
+
     border-radius: 5px;
-    font-size: 2rem;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-textarea {
-    background-color: #f2e9de;
+    font-size: 1rem;
 }
 
 .notebuttons {
@@ -121,13 +142,7 @@ textarea {
     justify-content: flex-end;
 }
 
-.save {
-    color: #575279;
-}
 
-.delete {
-    color: #575279;
-}
 
 @media screen  and (max-width: 499px) {
 
@@ -146,6 +161,12 @@ textarea {
         height: 7rem;
         display: flex;
         flex-direction: row;
+        justify-content: start;
+        padding-left: 2rem;
+        }
+
+    .notelist{
+        padding: 0rem;
     }
 
     .listitem{
