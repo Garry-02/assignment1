@@ -27,7 +27,7 @@
         </div>
         <header class = "light">
                 <nav>
-                    <button class = "themebutton" onclick="themechange()"> Theme </button>
+                    <button class = "themebutton" onclick="themeChange()"> Theme </button>
                     <ul class = "headerlist light">
                         <li class = "hlitem"> About </li>
                         <li class = "hlitem">  Docs </li>
@@ -35,16 +35,16 @@
                 </nav>
         </header>
         <div class = "middle mlight">
-            <button class = "newbutton" onclick="newnote()"> 
+            <button class = "newbutton" onclick = "newNote()"> 
                 + create a new note
             </button>
             <article class = "box">
                 <div class = "newnote"> 
-                    <textarea id="Note" rows='8' cols="25" contenteditable="True" class = "tlight"> add your note here </textarea>
+                    <textarea id="Note" rows='8' cols="25" contenteditable="True" class = "tlight"> add your note here (Put title in first line and hit enter twice before note body) </textarea>
                 </div>
                 <div class = "notebuttons">
-                    <button class = "save" onclick="save()"> save </button>
-                    <button class = "delete" onclick="del()"> delete </button>
+                    <button class = "save" onclick = "saveNote()"> save </button>
+                    <button class = "delete" onclick = "delNote()"> delete </button>
                 </div>
             </article>
             <footer class = "light">
