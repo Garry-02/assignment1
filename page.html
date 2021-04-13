@@ -19,15 +19,13 @@
             
             <div>
                 <h3> NOTES </h3>
-                <ul class = "notelist">
-                    <li class = "listitem"> note 1 </li>
-                    <li class = "listitem"> note 2 </li>
+                <ul class = "notelist" id = "notelist">
                 </ul>
             </div>
         </div>
         <header class = "light">
                 <nav>
-                    <button class = "themebutton" onclick="themeChange()"> Theme </button>
+                    <button class = "themebutton" onclick="themeChange()"> &#9788; </button>
                     <ul class = "headerlist light">
                         <li class = "hlitem"> About </li>
                         <li class = "hlitem">  Docs </li>
@@ -40,11 +38,12 @@
             </button>
             <article class = "box">
                 <div class = "newnote"> 
-                    <textarea id="Note" rows='8' cols="25" contenteditable="True" class = "tlight"> add your note here (Put title in first line and hit enter twice before note body) </textarea>
+                    <textarea id="Note" rows='20' cols="100" contenteditable="True" class = "tlight"> add your note here (Put title in first line and hit enter twice before note body) </textarea>
                 </div>
                 <div class = "notebuttons">
                     <button class = "save" onclick = "saveNote()"> save </button>
                     <button class = "delete" onclick = "delNote()"> delete </button>
+                    <button class = "close" onclick = "closeNote()"> close </button>
                 </div>
             </article> 
         </div>

@@ -5,28 +5,25 @@ const middle = document.querySelector(".middle");
 const footer = document.querySelector("footer");
 const ul = document.querySelector(".headerlist");
 const textarea = document.querySelector("textarea");
-
-function themeChange() {
-
-    head.classList.toggle("light");
-    head.classList.toggle("dark");
-    sidebar.classList.toggle("sdark");
-    sidebar.classList.toggle("slight");
-    middle.classList.toggle("mdark");
-    middle.classList.toggle("mlight");
-    footer.classList.toggle("dark");
-    footer.classList.toggle("light");
-    ul.classList.toggle("light");
-    ul.classList.toggle("dark");
-    textarea.classList.toggle("tlight");
-    textarea.classList.toggle("tdark");
-
-}
-
-
 var newbtn = document.querySelector(".newbutton");
 const savebtn = document.querySelector(".save");
 const delbtn = document.querySelector(".delete");
+const closebtn = document.querySelector(".close");
+var NotesArray = [];
+
+
+function themeChange() {
+    head.classList.toggle("dark");
+    sidebar.classList.toggle("sdark");
+    middle.classList.toggle("mdark");;
+    footer.classList.toggle("dark");
+    ul.classList.toggle("dark");
+    textarea.classList.toggle("tdark");
+}
+
+function createNoteObject(arr) {
+    return NewObject = {title : arr[0], body: arr[1]}
+}
 
 function newNote() {
     newbtn.style.visibility = 'hidden';
@@ -43,19 +40,28 @@ function delNote() {
     textarea.value = "add your note here (Put title in first line and hit enter twice before note body)";
 }   
 
-var NotesArray = [];
-
 function saveNote() {
-    const note = document.querySelector('textarea').value
-    const notearr = note.split('\n\n')
-    NotesArray.push(createNoteObject(notearr))
-    document.querySelector('textarea').value = ""
-    console.log(NotesArray)
+    const note = document.querySelector('textarea').value;
+    const notearr = note.split('\n\n');
+    NotesArray.push(createNoteObject(notearr));
+    textarea.value = "";
+    console.log(NotesArray);
     delNote();
+
+    const noteTitle = Object.values(notearr)[0];
+    console.log(noteTitle);
+    const entry = document.createElement("li");
+    entry.onclick = function() {
+        textarea.style.visibility = 'visible';
+        textarea.value = note;
+        newbtn.style.visibility = 'hidden';
+        closebtn.style.visibility = 'visible'; 
+    }
+    entry.appendChild(document.createTextNode(noteTitle))
+    document.getElementById("notelist").appendChild(entry)
 }
 
-
-function createNoteObject(arr) {
-    return NewObject = {title : arr[0], body: arr[1]}
+function closeNote() {
+    delNote();
+    closebtn.style.visibility = 'hidden';
 }
-

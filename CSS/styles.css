@@ -70,14 +70,19 @@ nav {
 }
 
 textarea {
+    border-style: none;
     visibility: hidden;
 }
 
-.save {
+.save  {
     visibility: hidden;
 }
 
 .delete {
+    visibility: hidden;
+}
+
+.close {
     visibility: hidden;
 }
 
@@ -145,15 +150,15 @@ footer {
 }
 
 button {
-
-    border-radius: 5px;
+    border-style: none;
     font-size: 1rem;
+    background-color: transparent;
 }
 
 .notebuttons {
-    padding-left: 6rem;
+    padding-left: 25rem;
     display : flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 
