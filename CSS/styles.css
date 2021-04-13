@@ -134,6 +134,7 @@ footer {
 
 .middle {
     grid-area: m;
+    height: 900px;
 }
 
 .newnote {

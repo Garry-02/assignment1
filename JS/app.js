@@ -6,8 +6,6 @@ const footer = document.querySelector("footer");
 const ul = document.querySelector(".headerlist");
 const textarea = document.querySelector("textarea");
 
-
-
 function themeChange() {
 
     head.classList.toggle("light");
@@ -45,13 +43,14 @@ function delNote() {
     textarea.value = "add your note here (Put title in first line and hit enter twice before note body)";
 }   
 
+var NotesArray = [];
 
 function saveNote() {
     const note = document.querySelector('textarea').value
     const notearr = note.split('\n\n')
-    NoteArray.push(createNoteObject(notearr))
+    NotesArray.push(createNoteObject(notearr))
     document.querySelector('textarea').value = ""
-    console.log(notesArray)
+    console.log(NotesArray)
     delNote();
 }
 
