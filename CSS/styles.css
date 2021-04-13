@@ -194,4 +194,8 @@ button {
     .box {
         height: 400px;
     }
+
+    .notebuttons {
+        padding : 7rem;
+    }
 }

@@ -9,10 +9,12 @@ var newbtn = document.querySelector(".newbutton");
 const savebtn = document.querySelector(".save");
 const delbtn = document.querySelector(".delete");
 const closebtn = document.querySelector(".close");
+var notelist = document.getElementById("notelist");
 var NotesArray = [];
 
 
 function themeChange() {
+    /* Function to change the theme */
     head.classList.toggle("dark");
     sidebar.classList.toggle("sdark");
     middle.classList.toggle("mdark");;
@@ -26,6 +28,7 @@ function createNoteObject(arr) {
 }
 
 function newNote() {
+    /* Function to show new note */
     newbtn.style.visibility = 'hidden';
     savebtn.style.visibility = 'visible';
     delbtn.style.visibility = 'visible';
@@ -33,6 +36,7 @@ function newNote() {
 }
 
 function delNote() {
+    /* Function to delete note */
     newbtn.style.visibility = 'visible';
     savebtn.style.visibility = 'hidden';
     delbtn.style.visibility = 'hidden';
@@ -41,6 +45,7 @@ function delNote() {
 }   
 
 function saveNote() {
+    /* Function to save note */
     const note = document.querySelector('textarea').value;
     const notearr = note.split('\n\n');
     NotesArray.push(createNoteObject(notearr));
@@ -57,11 +62,12 @@ function saveNote() {
         newbtn.style.visibility = 'hidden';
         closebtn.style.visibility = 'visible'; 
     }
-    entry.appendChild(document.createTextNode(noteTitle))
-    document.getElementById("notelist").appendChild(entry)
+    entry.appendChild(document.createTextNode(noteTitle));
+    notelist.appendChild(entry);
 }
 
 function closeNote() {
+    /* Function to close note */
     delNote();
     closebtn.style.visibility = 'hidden';
 }
